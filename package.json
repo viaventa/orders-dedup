@@ -1,0 +1,14 @@
+{
+  "name": "orders-dedup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Нормализация телефонов и дедупликация заявок из /api/orders",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
