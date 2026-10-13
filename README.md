@@ -30,9 +30,9 @@ npm test    # юнит-тесты на node:test
 ## Структура
 
 ```
-├── api/result.js        # обработчик: забирает заявки и отдаёт JSON (функция Vercel)
+├── server.js            # HTTP-сервер: GET /result забирает заявки и отдаёт JSON
 ├── lib/clients.js       # нормализация телефонов и дедупликация
-├── server.js            # локальный запуск или любой Node-хостинг
-├── test/                # тесты и пример данных из /api/orders
-└── vercel.json          # /result → /api/result
+└── test/                # тесты и пример данных из /api/orders
 ```
+
+Vercel запускает `server.js` как Node-сервер без дополнительной настройки. Тот же файл без изменений работает на Render, Railway, Fly или своём сервере.
